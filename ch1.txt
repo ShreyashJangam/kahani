@@ -1,1 +1,187 @@
 shreyash shvaji 
+
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/kahani/.git/
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ touch ch1.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ touch ch2.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ code ch1.txt 
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ code ch2.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ git add .
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ git commit -m "create ch1 and ch2"
+[master (root-commit) b625cf0] create ch1 and ch2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 ch1.txt
+ create mode 100644 ch2.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (master)
+$ git remote add origin https://github.com/ShreyashJangam/kahani.git
+git branch -M main
+git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 274 bytes | 274.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShreyashJangam/kahani.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git branch nayikahani
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git branch 
+* main
+  nayikahani
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git checkout nayikahani
+Switched to branch 'nayikahani'
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ code ch
+ch1.txt  ch2.txt  
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ code ch1.txt 
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git add . commit -m "modify in ch1 in branch nayi "
+error: unknown switch `m'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git add . 
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git commit -m "modify in ch1 in branch nayi "
+[nayikahani 0ad2818] modify in ch1 in branch nayi
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git branch
+  main
+* nayikahani
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ touch ch3.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ code ch3.txt 
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git add .
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git commit -m "create ch3 "
+[main 31e0a92] create ch3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ch3.txt
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 162.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShreyashJangam/kahani.git
+   b625cf0..31e0a92  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git checkout nayikahani
+Switched to branch 'nayikahani'
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git push -u origin nayikahani
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'nayikahani' on GitHub by visiting:
+remote:      https://github.com/ShreyashJangam/kahani/pull/new/nayikahani
+remote:
+To https://github.com/ShreyashJangam/kahani.git
+ * [new branch]      nayikahani -> nayikahani
+branch 'nayikahani' set up to track 'origin/nayikahani'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (nayikahani)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git merge nayikahani
+Merge made by the 'ort' strategy.
+ ch1.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 331 bytes | 331.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShreyashJangam/kahani.git
+   31e0a92..34c5e75  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Lenovo@DESKTOP-NB5D670 MINGW64 ~/desktop/kahani (main)
+$
